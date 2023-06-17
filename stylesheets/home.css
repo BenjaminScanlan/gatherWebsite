@@ -1,0 +1,388 @@
+/* Body(background image)
+
+/* Home */
+.home {
+  background-image: url("../Images/landscapeEggs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Add this line to keep the background image centered */
+  height: 100vh;
+  width: 100%;
+  /* not sure if the following is needed */
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  /*  */
+}
+
+/* navbar */
+.navbar {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent; /* Remove the gray background */
+  font-family: "Playfair Display", serif; /* Set the font */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* End Navbar  */
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cont img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.963); /* Adjust the shadow properties as needed */
+  border-radius: 10px; /* Adjust the border-radius value as needed */
+}
+
+/* buy now button */
+/* .link {
+  padding: 15px 30px;
+  margin: 10px;
+  display: inline-block;
+  color: #000;
+  background: #ffce54;
+  text-decoration: none;
+} */
+.link {
+  padding: 15px 30px;
+  display: inline-block;
+  color: #000;
+  background-image: url("../Images/gatherGraphic.jpg");
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #000;
+}
+.link {
+  animation: bounce 4.8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*===================*/
+/* FLOAT
+/*===================*/
+
+.float-on-hover {
+  border-radius: 10rem;
+  border: 2rem;
+  border-color: bisque;
+  height: 10rem;
+  width: 10rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.float-on-hover:hover,
+.float-on-hover:focus,
+.float-on-hover:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* album cover */
+.albumCover {
+  height: 30vh;
+  width: auto;
+  margin-bottom: 15em;
+}
+
+/* about */
+
+.about {
+  background-image: url("../Images/1HD_landscapeEggs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Add this line to keep the background image centered */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+.aboutParagraph {
+  transform: scaleX(-1);
+  color: rgb(250, 250, 250);
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 1.7em;
+  text-shadow: 16px 20px 10px rgba(0, 0, 0, 1);
+  padding: 0 10%;
+  margin-bottom: 2.9em;
+}
+
+/* listen */
+
+.listen {
+  background-image: url("../Images/1HD_Gather World-31.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  /* opacity: 0.96; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.spotify-player {
+  width: 100%;
+  max-width: 100em; /* Adjust the maximum width as needed */
+  text-align: center;
+}
+
+/* contact */
+
+.contact {
+  background-image: url("../Images/2HD_Gather World-31.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* not sure if the following is needed */
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact {
+  background-image: url("../Images/2HD_Gather World-31.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(-1);
+}
+
+#contact h2 {
+  color: rgba(255, 255, 255, 0.961);
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+  transform: scaleX(-1);
+}
+
+#contact p {
+  color: rgb(255, 255, 255);
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-bottom: 1em;
+  text-align: center;
+  transform: scaleX(-1);
+}
+
+/* bonus */
+
+.bonus {
+  background-image: url("../Images/2HD_post 2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* not sure if the following is needed */
+  background-position: 54% 46%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 511px) {
+  .aboutParagraph {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  .sm-icons {
+    margin-top: 20px;
+  }
+
+  .sm-icons .nav-item {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home {
+    /* Modify styles for the home section */
+  }
+
+  .navbar {
+    /* Modify styles for the navbar */
+  }
+
+  .cont {
+    /* Modify styles for the cont section */
+  }
+
+  .link {
+    margin-top: 3em;
+  }
+
+  /* Continue modifying styles for other sections */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .home {
+    /* Modify styles for the home section */
+  }
+
+  .navbar {
+    /* Modify styles for the navbar */
+  }
+
+  .cont {
+    /* Modify styles for the cont section */
+  }
+
+  .link {
+    margin-top: 3em;
+  }
+
+  /* Continue modifying styles for other sections */
+}
+
+@media only screen and (min-width: 1024px) {
+  .home {
+    /* Modify styles for the home section */
+  }
+
+  .navbar {
+    /* Modify styles for the navbar */
+  }
+
+  .cont {
+    margin-top: 2.5em;
+  }
+
+  .link {
+    /* Modify styles for the link section */
+  }
+
+  /* Continue modifying styles for other sections */
+}
